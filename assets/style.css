@@ -1,0 +1,59 @@
+.entete {
+  display: flex;
+  flex-wrap: wrap;
+
+  div:first-child {
+    max-width: 300px;
+    margin: auto;
+  }
+}
+
+.slogan { 
+  flex: 1;
+  font-size: 2rem;
+  text-align: center;
+}
+
+ul {
+  margin: 0 0 0.4rem 0;
+  background-color: black;
+  padding: 1rem 2rem;
+  display: flex;
+  list-style: none;
+  gap: 0.3rem;
+  a {
+    color: white;
+  }
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+.colonne {
+  background: lightgrey;
+  flex: 1;
+}
+
+main {
+  display: flex;
+  gap: 1rem;
+  section:first-child {
+    flex: 2;
+  }
+}
+
+tr td:first-child {
+  max-width: 100px;
+}
+
+@media (max-width: 768px) { 
+  main {
+    flex-direction: column;
+  }
+  .entete {
+    flex-direction: column;
+  }
+}
+
